@@ -1,0 +1,83 @@
+.App {
+  overflow-y: scroll;
+  background: #3A3F4A;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #FFFFFF;
+  font-size: 26px;
+  line-height: 32px;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.Content-Box {
+  position: absolute;
+  display: block;
+  left: 55%;
+  top: 213px;
+  margin: 5px;
+  width: 775px;
+  height: 500px;
+}
+
+.Text-Header {
+  font-size: 72px;
+  line-height: 88px;
+}
+
+.Text-Body {
+  font-size: 26px;
+  line-height: 32px;
+}
+
+.Top-Nav {
+  display: inline-block;
+  float: right;
+  text-align: center;
+  padding: 10px 22px;
+  text-decoration: none;
+}
+
+.Top-Nav:hover {
+  display: inline-block;
+  float: right;
+  text-align: center;
+  padding: 6px 16px;
+  text-decoration: none;
+  font-size: 28px;
+  transition: 0.3s;
+}
+
+.Text-Button {
+  padding: 3px;
+  margin: 2px;
+  display: inline-block;
+  border-style: solid;
+  outline-color: #FFFFFF;
+  border-width: 1px;
+  border-radius: 4px;
+  font-size: 20px;
+}
+
+.Text-Button:hover {
+  padding: 8px;
+  margin: 2px;
+  display: inline-block;
+  border-style: solid;
+  outline-color: #FFFFFF;
+  border-width: 1px;
+  border-radius: 4px;
+  transition: 0.3s;
+  font-size: 26px;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
