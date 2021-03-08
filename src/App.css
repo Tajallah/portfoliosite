@@ -5,17 +5,25 @@ html {
 }
 
 .App {
-  font-family: 'Montserrat Alternates', sans-serif;
   font-style: normal;
   font-weight: normal;
   color: #FFFFFF;
   font-size: 26px;
   line-height: 32px;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.page {
+  position: absolute;
+  top: 100px;
+  left:0;
+  right:0;
 }
 
 a {
     color: #FFFFFF;
     text-decoration: none;
+    transition: 0.3s;
 }
 
 a:hover {
@@ -24,13 +32,18 @@ a:hover {
 }
 
 .Content-Box {
+  border-radius: 4px;
   position: absolute;
   display: block;
-  left: 55%;
-  top: 213px;
+  right: 10px;
+  top: 155px;
+  padding: 10px;
   margin: 5px;
   width: 775px;
-  height: 500px;
+}
+
+html-webkit-scrollbar {
+  display: none;
 }
 
 .Text-Header {
@@ -43,18 +56,22 @@ a:hover {
   line-height: 32px;
 }
 
-.Top-Nav {
+nav {
+  color: #FFFFFF;
   top: 0px;
   right: 10px;
   position: absolute;
   display: inline-block;
   text-align: center;
-  padding: 10px 22px;
+  padding: 8px 8px;
   text-decoration: none;
+  font-size: 20px;
+  line-height: 32px;
+  font-family: 'Montserrat Alternates', sans-serif;
 }
 
 .Text-Button {
-  padding: 3px;
+  padding: 10px 10px;
   margin: 2px;
   display: inline-block;
   border-style: solid;
@@ -62,29 +79,190 @@ a:hover {
   border-width: 1px;
   border-radius: 4px;
   font-size: 20px;
+  transition: 0.3s;
 }
 
 .Text-Button:hover {
-  padding: 8px;
+  padding: 10px 10px;
   margin: 2px;
   display: inline-block;
   border-style: solid;
   outline-color: #FFFFFF;
   border-width: 1px;
   border-radius: 4px;
-  transition: 0.3s;
   font-size: 26px;
+  transition: 0.3s;
 }
 
 .Particle-Box {
   position: absolute;
+  left:0;
+  right:0;
   width: 100%;
   height: 100%;
   z-index: -999999999999999999;
 }
 
-.Fade-Cover {
+.Gradient-Cover {
   position: absolute;
   background: linear-gradient(to right, rgba(58,63,74,0), rgba(58,63,74,1));
   z-index: -1;
 }
+
+.move-appear,
+.move-enter {
+  animation-name: moveIn;
+  animation-duration: 800ms;
+  animation-delay: 100ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  z-index:-1;
+}
+
+@keyframes moveIn {
+  from {transform: translateX(-200em)}
+  to {transform: translateX(0em)}
+}
+
+.move-appear-active,
+.move-enter.move-enter-active {
+  animation-name: moveIn;
+  animation-duration: 1200ms;
+  animation-delay: 100ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  opacity: 1;
+  transition: opacity 300ms linear 150ms;
+}
+
+.move-exit {
+  animation-name: fadeAway;
+  animation-duration: 800ms;
+  animation-delay: 100ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  opacity: 1;
+}
+
+@keyframes fadeAway {
+  from {opacity:1}
+  to {opacity:0}
+}
+
+@keyframes moveOut {
+  from {transform: translateY(0em)}
+  to {transform: translateY(200em)}
+}
+
+.fade-appear,
+.fade-enter {
+  opacity: 0;
+  z-index:-1;
+}
+
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms linear 150ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.attribution {
+  font-size: 8px;
+}
+
+.imageA {
+  position: absolute;
+  padding: 8px 8px;
+  margin: 2px;
+  left: 250px;
+  top: 50px;
+  height: 200px;
+  width: 200px;
+  transition: 0.3s;
+}
+
+.imageA:hover {
+  position: absolute;
+  padding: 8px 8px;
+  margin: 2px;
+  left: 250px;
+  top: 50px;
+  height: 250px;
+  width: 250px;
+  transition: 0.3s;
+}
+
+.imageB {
+  position: absolute;
+  padding: 8px 8px;
+  margin: 2px;
+  left: 450px;
+  top: 250px;
+  height: 200px;
+  width: 200px;
+  transition: 0.3s;
+}
+
+.imageB:hover {
+  position: absolute;
+  padding: 8px 8px;
+  margin: 2px;
+  left: 450px;
+  top: 250px;
+  height: 250px;
+  width: 250px;
+  transition: 0.3s;
+}
+
+.imageC {
+  position: absolute;
+  padding: 8px 8px;
+  margin: 2px;
+  left: 250px;
+  top: 450px;
+  height: 200px;
+  width: 200px;
+  transition: 0.3s;
+}
+
+.imageC:hover {
+  position: absolute;
+  padding: 8px 8px;
+  margin: 2px;
+  left: 250px;
+  top: 450px;
+  height: 250px;
+  width: 250px;
+  transition: 0.3s;
+}
+
+.imageD {
+  position: absolute;
+  padding: 8px 8px;
+  margin: 2px;
+  left: 450px;
+  top: 650px;
+  height: 200px;
+  width: 200px;
+  transition: 0.3s;
+}
+
+.imageD:hover {
+  position: absolute;
+  padding: 8px 8px;
+  margin: 2px;
+  left: 450px;
+  top: 650px;
+  height: 250px;
+  width: 250px;
+  transition: 0.3s;
+}
+
+::-webkit-scrollbar { 
+  display: none; 
+  }

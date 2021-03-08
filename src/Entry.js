@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom"
 import './App.css';
 
 class Entry extends Component {
@@ -13,7 +14,7 @@ class Entry extends Component {
             enthusiast with a particular interest in artifical intelligence
             and decentralized network applications.<br></br><br>
             </br>This is my portfolio/blog<br></br><br></br>
-            <a className="Text-Button">I'd like to know more</a>
+            <Link to="/aboutme" className="Text-Button">I'd like to know more</Link>
           </div>
           </div>
       </div>

@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
 
 const stl = {
-    background: 'linear-gradient(to right, rgba(58,63,74,0), rgba(58,63,74,0.05), rgba(58,63,74,0.1), rgba(58,63,74,0.2), rgba(58,63,74,0.9), rgba(58,63,74,1)',
-    position: "absolute",
+    overflow: "hidden",
+    height: "125%",
     width: "100%",
-    height: "100%",
+    backgroundColor: "#000",
+    borderRadius: "50%",
+    position: "absolute",
+    width: "75%",
+    top: "-10%",
+    right: "-20%",
     zIndex: "-100"
   }
  

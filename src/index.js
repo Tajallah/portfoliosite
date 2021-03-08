@@ -1,18 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Home from './Homepage';
-import TopBar from './Navbar';
-import Particle from './Background';
-import Fade from './Fade'
+
+import Main from './Main'
+
 import './index.css';
 
 const rootElement = document.getElementById("root");
+document.body.style.overflow = "hidden"
 ReactDOM.render(
   <React.StrictMode>
-    <TopBar />
-    <Home />
-    <Fade />
-    <Particle />
+    <Main />
   </React.StrictMode>,
   rootElement
 );
