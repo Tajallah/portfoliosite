@@ -29,7 +29,7 @@
   },
   "particles": {
     "color": {
-      "value": "000"
+      "value": "#000"
     },
     "links": {
       "color": "#000",
