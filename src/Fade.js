@@ -5,7 +5,7 @@ const stl = {
     height: "125%",
     width: "100%",
     backgroundColor: "#000",
-    borderRadius: "50%",
+    borderRadius: "80%",
     position: "absolute",
     width: "75%",
     top: "-10%",

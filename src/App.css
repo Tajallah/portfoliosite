@@ -266,3 +266,27 @@ nav {
 ::-webkit-scrollbar { 
   display: none; 
   }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .None {
+      z-index: 10;
+      position: absolute;
+      left: 0%;
+      top: 0%;
+      height: 800px;
+      width: 800px;
+      animation: App-logo-spin infinite 10s linear;
+    }
+  }
+  
+  @keyframes App-logo-spin {
+    0% {
+      transform: scale(0.5,0.5);
+    }
+    50% {
+      transform: scale(-0.49,0.5);
+    }
+    100% {
+      transform: scale(0.49,0.5);
+    }
+  }

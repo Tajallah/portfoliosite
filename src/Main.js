@@ -4,6 +4,7 @@ import TopBar from './Navbar';
 import Particle from './Background';
 import AboutMe from './aboutMe'
 import Fade from './Fade'
+import Projects from './Projects'
 import './index.css';
 
 import {
@@ -43,6 +44,7 @@ class Main extends Component {
                 <div className="move">
                 <Switch location={location}>
                     <Route path="/aboutme" component={AboutMe} />
+                    <Route path="/projects" component={Projects} />
                     <Route path="/" component={Home} />
                 </Switch>
                 </div>
