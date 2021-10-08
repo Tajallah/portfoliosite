@@ -14,7 +14,7 @@ class TopBar extends Component {
             <a href="https://github.com/Tajallah">github</a>{' · '}
             <a href="https://www.linkedin.com/in/tajallah-sims-97521413b/">linkedin</a>{' · '}
             <a href="https://www.kaggle.com/tajallah">kaggle</a>{' · '}
-            <Link to="/projects">projects</Link>
+            <Link to="https://github.com/Tajallah">projects</Link>
           </nav>
     );
   }

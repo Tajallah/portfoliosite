@@ -18,7 +18,7 @@ class AboutMe extends Component {
             <div className="Text-Header">Me,</div>
             <br></br>
             <div className="Text-Body">I've been writing code as a hobby since
-            around 17 and I love cats. I'm a vegetarian from the LA area who hates talking about
+            around 17 and I love cats. I'm a vegetarian in the Portland area who hates talking about
             themself and loves learning new things.<br></br><br></br>
             Regarding code, I'm a full stack developer with expertise in
             backend technologies and automation. My professional background
@@ -29,7 +29,7 @@ class AboutMe extends Component {
             ml-related papers. One day I'll get around to using
             Kaggle as more than just place to bum datasets.<br></br>
             <br></br><Link to="/" className="Text-Button">Take me back</Link>
-            <Link to="/projects" className="Text-Button">Show me some projects</Link>
+            <Link to="https://github.com/Tajallah" className="Text-Button">Show me some projects</Link>
           </div>
           <br></br><br></br>
           <div className="attribution">Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a>,{' '}
