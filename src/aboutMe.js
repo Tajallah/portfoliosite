@@ -29,7 +29,7 @@ class AboutMe extends Component {
             ml-related papers. One day I'll get around to using
             Kaggle as more than just place to bum datasets.<br></br>
             <br></br><Link to="/" className="Text-Button">Take me back</Link>
-            <Link to="https://github.com/Tajallah" className="Text-Button">Show me some projects</Link>
+            <a href="https://github.com/Tajallah" className="Text-Button">Show me some projects</a>
           </div>
           <br></br><br></br>
           <div className="attribution">Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a>,{' '}
